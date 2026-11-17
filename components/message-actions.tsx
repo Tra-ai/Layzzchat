@@ -78,7 +78,7 @@ export function EditAlert() {
   const optimisticUpdateMessage = useMessage(
     (state) => state.optimisticUpdateMessage
   );
-  const inputRef = useRef() as React.MutableRefObject<HTMLTextAreaElement>;
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const handleEdit = async () => {
     const supabase = supabaseClient();
     const text = inputRef.current.value.trim();

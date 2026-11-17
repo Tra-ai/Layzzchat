@@ -9,7 +9,7 @@ import { ArrowDown } from "lucide-react";
 import LoadMoreMessages from "./load-more-messages";
 
 const MessagesList = () => {
-  const scrollRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const [userScrolled, setUserScrolled] = useState(false);
   const [notification, setNotification] = useState(0);
   const {
