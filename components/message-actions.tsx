@@ -81,7 +81,9 @@ export function EditAlert() {
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const handleEdit = async () => {
     const supabase = supabaseClient();
-    const text = inputRef.current.value.trim();
+    const input = inputRef.current;
+    if (!input) return;
+    const text = input.value.trim();
 
     if (text) {
       optimisticUpdateMessage({

@@ -46,8 +46,9 @@ const MessagesList = () => {
           }
           const scrollContainer = scrollRef.current;
           if (
+            scrollContainer &&
             scrollContainer.scrollTop <
-            scrollContainer.scrollHeight - scrollContainer.clientHeight - 10
+              scrollContainer.scrollHeight - scrollContainer.clientHeight - 10
           ) {
             setNotification((current) => current + 1);
           }
@@ -100,7 +101,10 @@ const MessagesList = () => {
   };
   const scrollDown = () => {
     setNotification(0);
-    scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    const scrollContainer = scrollRef.current;
+    if (scrollContainer) {
+      scrollContainer.scrollTop = scrollContainer.scrollHeight;
+    }
   };
 
   return (
