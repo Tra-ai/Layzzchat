@@ -1,0 +1,55 @@
+{
+  "name": "layzz",
+  "author": "Sohom Mondal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "10.2.9",
+    "@hookform/resolvers": "latest",
+    "@radix-ui/react-alert-dialog": "latest",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-dropdown-menu": "latest",
+    "@radix-ui/react-slot": "latest",
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "2.119.0",
+    "@vercel/analytics": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "next": "16.4.6",
+    "next-themes": "latest",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-hook-form": "latest",
+    "sonner": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss-animate": "latest",
+    "uuid": "latest",
+    "zod": "latest",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/uuid": "latest",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.4.6",
+    "postcss": "^8.5.6",
+    "supabase": "latest",
+    "tailwindcss": "3.4.17",
+    "typescript": "7.0.2",
+    "webpack": "latest"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
